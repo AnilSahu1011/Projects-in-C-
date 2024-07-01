@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task1.css">
+</head>
+<body>
+    <h2> HTML Task - 1</h2>
+    <form class="box" action= "javascript:submitForm()" onSubmit = "return validate()">
+        <label class="content" for="DOB">DOB :</label>
+        <input class="content" type="date" id="DOB" name="DOB" required/><br>
+
+        <label class="content" for="name">Name :</label>
+        <input class="content" type="text" id="name" name="name" required/><br>
+
+        <label class="content" for="color">Color :</label>
+        <input class="content" type="color" id="color" name="color"/><br><br>
+
+        <input class="content" type="submit" id="submit" name="submit" value="Submit"/><br>
+    </form>
+    <script>
+    function validate() {
+        let name = document.getElementById("name")
+        let color2 = document.getElementById("color")
+        if(name.value.length < 10) {
+          window.alert("Name must be greater than 10 character");
+          return false;
+        }
+        if(color2.value !=="#000000") {
+          window.alert("Color not matched");
+          return false;
+        } 
+        else {
+          return true;
+        }
+    }
+    function submitForm() {
+        window.alert("Form Submitted")
+      }
+    </script>
+</body>
+</html>
