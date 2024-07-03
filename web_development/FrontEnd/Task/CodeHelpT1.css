@@ -1,0 +1,77 @@
+.wrapper{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+.container{
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 15%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav img{
+    width: 80px;
+    mix-blend-mode: multiply;
+}
+.nav-items{
+    display: flex;
+    column-gap: 35px;
+}
+#team{
+    color: #6573CB;
+    text-decoration: underline;
+}
+.nav-items a{
+    text-decoration:none;
+    color: rgb(81, 80, 80);
+    font-weight: 100;
+}
+.nav-btn{
+    border: 1px solid rgb(159, 158, 158);
+    padding: 7px 15px;
+    background-color: #6573CB;
+    color: whitesmoke;
+    border-radius: 7px;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+}
+hr {
+    border-top: 2px solid #ccc; 
+    width: 55%; 
+    margin: 0 ; 
+}
+
+.hero-item,
+.para {
+    flex: 1 1 200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.hero
+.hero-item img{
+    width: 450px;
+    border-radius: 15px;
+    mix-blend-mode: multiply; /*Remove white background */
+}
+#text{
+    margin-top: 0%;
+}
+
+.contact{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 30px;
+}
+.contact img{
+    width: 70px;
+}
+.contact-heading{
+    color: #6573CB;
+}
